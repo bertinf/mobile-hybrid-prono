@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { HomePage } from './../home/home';
+import { storage } from 'firebase';
 
 
 /**
@@ -23,6 +24,7 @@ export class ViewProfilPage {
 
 	profileData: FirebaseObjectObservable<Profile>;
   prono = {} as Prono;
+  picUrl: string;
   
 
   constructor(private afAuth: AngularFireAuth, private afDatabase: AngularFireDatabase ,
@@ -31,6 +33,7 @@ export class ViewProfilPage {
 
   
   ionViewDidLoad() {
+
     this.afAuth.authState.subscribe( data => {
 
     	if (data) {
@@ -38,6 +41,13 @@ export class ViewProfilPage {
         this.profileData.subscribe(snapshot => {
           this.prono.username = snapshot.username;
         });
+
+        const storageRef = storage().ref().child(`picture/${data.uid}`);
+        storageRef.getDownloadURL().then(url => {
+          alert(url);
+          this.picUrl = url;
+        });
+
     	}
 
     })
@@ -45,10 +55,10 @@ export class ViewProfilPage {
     console.log('ionViewDidLoad ViewProfilPage');
   }
 
-  addProno() {
-   // this.afDatabase.object(`prono/`).set(this.prono)
-      // .then( () => this.navCtrl.setRoot(HomePage));
-    
+
+
+
+  addProno() { 
     this.afDatabase.list('/prono').push(null).then(( ref ) => {
       ref.push(this.prono);
     }).then( () => this.navCtrl.setRoot(HomePage));
