@@ -10,6 +10,11 @@ Cyril Pivec : cyril.pivec@epitech.eu
 
 L'application permet à un utilisateur de s'identifier et de publier des "pronostiques"
 
+signup et login via firebase
+creation de profil avec choix de photo via l'objectif de votre smartphone
+Publication de pronostique (message) et stockage des données sur la base de donnée de firebase
+(Ces pronostique sont censé s'afficher sur la page home, ils sont bien get de la base de donnée mais nous n'avons pas réussi à les affichers à cause de la structure de la database firebase)
+
 ## Technologies utilisées
 
 Ionic 3, Firebase 4
