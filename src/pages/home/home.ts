@@ -21,7 +21,7 @@ export class HomePage {
 	ionViewDidLoad() {
 		this.pronos = this.afDatabase.object(`prono`);
 		this.pronos.subscribe(snapshot => {
-          alert(snapshot);
+          console.log(snapshot);
         });
 	}
 

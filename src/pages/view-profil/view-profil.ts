@@ -44,7 +44,7 @@ export class ViewProfilPage {
 
         const storageRef = storage().ref().child(`picture/${data.uid}`);
         storageRef.getDownloadURL().then(url => {
-          alert(url);
+          console.log(url);
           this.picUrl = url;
         });
 

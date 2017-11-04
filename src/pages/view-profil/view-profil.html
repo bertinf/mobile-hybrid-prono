@@ -17,7 +17,9 @@
 
 	<h1>Profile</h1>
 
-  <ion-img [src]="picUrl"></ion-img>
+  <ion-avatar>
+    <ion-img [src]="picUrl"></ion-img>
+  </ion-avatar>
 
 	<p>Username : {{ (profileData | async)?.username }}</p>
 	<p>First name : {{ (profileData | async)?.firstName }}</p>

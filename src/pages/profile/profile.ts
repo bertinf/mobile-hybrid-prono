@@ -4,6 +4,7 @@ import { AngularFireDatabase } from 'angularfire2/database-deprecated';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TabsPage } from '../tabs/tabs';
+import { HomePage } from '../home/home';
 import { storage } from 'firebase';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "68905693596",
+    "firebase_url": "https://prono-87549.firebaseio.com",
+    "project_id": "prono-87549",
+    "storage_bucket": "prono-87549.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68905693596:android:f9fca6875fa60883",
+        "android_client_info": {
+          "package_name": "com.prono.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "68905693596-nrialfajgt44fu0vaig5etomp2re499k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq0gvqgAS3KPWXRvgBCxV2MEswxu_rx_s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
