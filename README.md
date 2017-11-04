@@ -8,7 +8,7 @@ Cyril Pivec : cyril.pivec@epitech.eu
 
 ## Projet et fonctionnalités
 
-L'application permet à un utilisateur de s'identifier et de publier des "pronostiques"
+L'application permet à un utilisateur de s'identifier et de publier des "pronostiques" (
 
 -signup et login via firebase
 
@@ -22,3 +22,9 @@ L'application permet à un utilisateur de s'identifier et de publier des "pronos
 Ionic 3, Firebase 4
 
 Nom du projet sur Firebase : prono
+
+## Lancement du projet
+
+1. Lancer la commande "npm install"
+
+2. Lancer l'application sur votre téléphone via xcode
