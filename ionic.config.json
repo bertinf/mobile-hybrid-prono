@@ -1,0 +1,8 @@
+{
+  "name": "prono",
+  "app_id": "6123bd0b",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
